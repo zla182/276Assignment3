@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_picture"
+    tools:context=".UI.ActivityGaming">
+
+    <TableLayout
+        android:id="@+id/TableForButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/FoundOfMine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/found"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TableForButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <TextView
+        android:id="@+id/NumScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scansused"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NumFunTot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toEndOf="@+id/FoundOfMine"
+        app:layout_constraintTop_toTopOf="@+id/NumFunTot"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <TextView
+        android:id="@+id/NumFunTot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#CD1111"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/FoundOfMine"
+        app:layout_constraintEnd_toStartOf="@+id/NumScan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/FoundOfMine"
+        app:layout_constraintTop_toTopOf="@+id/FoundOfMine"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/ShowScanNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NumFunTot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/NumScan"
+        app:layout_constraintTop_toTopOf="@+id/NumFunTot"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <TextView
+        android:id="@+id/TimePlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeplayed"
+        android:textColor="#D62B2B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TableForButton"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <TextView
+        android:id="@+id/Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#D80E0E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/TimePlayed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/TimePlayed"
+        app:layout_constraintTop_toTopOf="@+id/TimePlayed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/BestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NumScan"
+        app:layout_constraintEnd_toStartOf="@+id/NumScan"
+        app:layout_constraintStart_toEndOf="@+id/FoundOfMine"
+        app:layout_constraintTop_toTopOf="@+id/NumScan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

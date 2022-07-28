@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="size">
+        <item>4</item>
+        <item>6</item>
+        <item>5</item>
+        <item>10</item>
+        <item>6</item>
+        <item>15</item>
+    </integer-array>
+    <integer name="Default_Row">4
+    </integer>
+    <integer name="Default_Col">6</integer>
+</resources>

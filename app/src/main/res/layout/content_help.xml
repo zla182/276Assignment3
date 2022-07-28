@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/helpbackground_picture"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <Button
+        android:id="@+id/Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/back"
+        android:textColor="#090000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Game_introduce"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/explain"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Citation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/citation"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Introduce" />
+
+    <TextView
+        android:id="@+id/Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/about_the_author"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/Citation"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/Citation"
+        app:layout_constraintTop_toBottomOf="@+id/Sound_link" />
+
+    <TextView
+        android:id="@+id/Mine_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="@string/Mine_link"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/Citation"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Citation"
+        app:layout_constraintTop_toBottomOf="@+id/Citation" />
+
+    <TextView
+        android:id="@+id/Welcome_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="@string/Welcome_background_link"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/Mine_link"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Mine_link"
+        app:layout_constraintTop_toBottomOf="@+id/Mine_link" />
+
+    <TextView
+        android:id="@+id/Option_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autoLink="all"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+        android:text="@string/Option_background_link"
+        app:layout_constraintEnd_toEndOf="@+id/Welcome_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Welcome_background"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome_background" />
+
+    <TextView
+        android:id="@+id/Help_backgound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#FFFFFF"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="@string/Help_background_link"
+        app:layout_constraintEnd_toEndOf="@+id/Option_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Option_background"
+        app:layout_constraintTop_toBottomOf="@+id/Option_background" />
+
+    <TextView
+        android:id="@+id/Sound_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="@string/Boom_sound"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/Option_background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Option_background"
+        app:layout_constraintTop_toBottomOf="@+id/Help_backgound" />
+
+    <TextView
+        android:id="@+id/Author_link"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/zla182_amp_jla641"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/Author"
+        app:layout_constraintStart_toStartOf="@+id/Author"
+        app:layout_constraintTop_toBottomOf="@+id/Author"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
